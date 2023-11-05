@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Material Design icons
 import { useSelector } from 'react-redux';
 import * as Animatable from 'react-native-animatable';
+import { colors } from '../constant/color-code';
 
 export default function Header() {
     const cartData = useSelector((state) => state.cartReducer);
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         elevation: 8,
         borderRadius: 8,
-        backgroundColor: '#037CD5'
+        backgroundColor: colors.primary
     },
     logo: {
         width: 100,
